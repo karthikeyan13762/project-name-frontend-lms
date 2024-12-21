@@ -1,0 +1,79 @@
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif; 
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #1a202c; 
+    color: #ffffff; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  
+/* Style for the LMS App link */
+.navbar .left-navbar a {
+    text-decoration: none;
+    color: #4fd1c5; 
+    font-size: 1.5rem; 
+    font-weight: bold; 
+    padding: 0.5rem 1rem; 
+    border-radius: 5px; 
+    transition: color 0.3s, background-color 0.3s; 
+  }
+  
+  .navbar .left-navbar a:hover {
+    background-color: #4fd1c5;
+    color: #1a202c; 
+  }
+  .navbar .right-navbar {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .navbar-link {
+    text-decoration: none;
+    color: #ffffff; 
+    font-size: 1rem; 
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .navbar-link:hover {
+    background-color: #4fd1c5; 
+    color: #1a202c; 
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column; 
+      align-items: flex-start; 
+      padding: 1rem; 
+    }
+  
+    .navbar span {
+      margin-bottom: 1rem;
+    }
+  
+    .right-navbar {
+      width: 100%; 
+      justify-content: space-around; 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .navbar span {
+      font-size: 1.2rem; 
+    }
+  
+    .navbar-link {
+      font-size: 0.9rem; 
+      padding: 0.4rem 0.8rem; 
+    }
+  }
