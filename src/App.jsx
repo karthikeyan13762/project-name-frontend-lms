@@ -14,6 +14,9 @@ import Dashboard from "./components/Dashboard";
 import AddStudent from "./components/AddStudent";
 import Logout from "./components/Logout";
 import axios from "axios";
+import Addbook from "./components/Addbook";
+import EditBook from "./components/EditBook";
+import DeleteBook from "./components/DeleteBook";
 
 function App() {
   const [role, setRolevar] = useState("");
@@ -36,11 +39,15 @@ function App() {
       {/* desructure this role in nav */}
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/books" element={<Books />} />
+        <Route path="/books" element={<Books role={role} />} />
         <Route path="/login" element={<Login setRolevar={setRolevar} />} />
         <Route path="/logout" element={<Logout setRolevar={setRolevar} />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/addstudent" element={<AddStudent />} />
+        <Route path="/addbook" element={<Addbook />} />
+        <Route path="/book/:id" element={<EditBook />} />
+        <Route path="/delete/:id" element={<DeleteBook />} />
+
         <Route />
       </Routes>
     </BrowserRouter>

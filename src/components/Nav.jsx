@@ -1,13 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../css/Nav.css";
+
 function Nav({ role }) {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen); // Toggle menu state
+  };
+
   return (
     <nav className="navbar">
       <div className="left-navbar">
         <Link to={"/"}>LMS App</Link>
       </div>
-      <div className="right-navbar">
+
+      {/* Hamburger Icon */}
+      <div className="hamburger" onClick={toggleMenu}>
+        <div className={`line ${menuOpen ? "open" : ""}`}></div>
+        <div className={`line ${menuOpen ? "open" : ""}`}></div>
+        <div className={`line ${menuOpen ? "open" : ""}`}></div>
+      </div>
+
+      {/* Navigation Links */}
+      <div className={`right-navbar ${menuOpen ? "open" : ""}`}>
         <Link to={"/books"} className="navbar-link">
           Books
         </Link>
@@ -25,6 +41,7 @@ function Nav({ role }) {
             </Link>
           </>
         )}
+
         {role === "" ? (
           <Link to={"/login"} className="navbar-link">
             Login

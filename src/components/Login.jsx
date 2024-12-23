@@ -41,7 +41,7 @@ function Login({ setRolevar }) {
           ></input>
         </div>
         <div className="form-group">
-          <label htmlFor="password">Username</label>
+          <label htmlFor="password">Password</label>
           <input
             type="password"
             placeholder="Enter Password"
@@ -49,7 +49,7 @@ function Login({ setRolevar }) {
           ></input>
         </div>
         <div className="form-group">
-          <label htmlFor="role">Username</label>
+          <label htmlFor="role">Role</label>
           <select
             name="role"
             id="role"

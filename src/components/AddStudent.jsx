@@ -19,7 +19,6 @@ function AddStudent() {
         if (res.data.registered) {
           navigate("/dashboard");
         }
-        console.log(res);
 
         // Reset user data state
         setUserData({

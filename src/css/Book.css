@@ -1,0 +1,21 @@
+.book-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+    gap: 10px; /* Spacing between cards */
+    padding: 10px;
+    background-color: #f9f9f9;
+  
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .book-list {
+      grid-template-columns: repeat(2, 1fr); /* 2 cards per row on medium screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .book-list {
+      grid-template-columns: 1fr; /* 1 card per row on small screens */
+    }
+  }

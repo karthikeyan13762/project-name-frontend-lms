@@ -1,0 +1,90 @@
+.book-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    width: 90%;
+  }
+  
+  .book-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .book-card img {
+    width: 100%;
+    /* max-width: 200px; */
+    height: 50%;
+    border-radius: 4px;
+    margin-bottom: 12px;
+  }
+  
+  .book-details {
+    text-align: center;
+  }
+  
+  .book-details h3 {
+    font-size: 1.2rem;
+    margin: 8px 0;
+  }
+  
+  .book-details p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .book-actions {
+    margin-top: 10px;
+  }
+  
+  .book-card-buttons {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .book-card-buttons .edit-button,
+  .book-card-buttons .delete-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .book-card-buttons .edit-button:hover,
+  .book-card-buttons .delete-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .book-card-buttons #edit-link {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .book-card {
+      width: 90%;
+      margin: 10px auto;
+    }
+  
+    .book-card img {
+      max-width: 150px;
+    }
+  
+    .book-details h3 {
+      font-size: 1rem;
+    }
+  
+    .book-details p {
+      font-size: 0.9rem;
+    }
+  }
