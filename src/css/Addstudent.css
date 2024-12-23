@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif; 
+    line-height: 1.5;
+    background-color: #f9fafb;
+  }
+  
+  /* Add Student Container */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    background: linear-gradient(to bottom right, rgba(26, 32, 44, 0.8), rgba(26, 32, 44, 0.8)),
+                url("https://via.placeholder.com/1920x1080") no-repeat center/cover;
+    color: #ffffff;
+  }
+  
+  /* Form Styling */
+  .student-form {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  .student-form h2 {
+    margin-bottom: 1.5rem;
+    color: #1a202c;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  /* Form Group */
+  .form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #4a5568;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #cbd5e0;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .form-group input:focus {
+    outline: none;
+    border-color: #4fd1c5;
+    box-shadow: 0 0 4px #4fd1c5;
+  }
+  
+  /* Submit Button */
+  button[type="submit"] {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #4fd1c5;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #38b2ac;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .student-form {
+      padding: 1.5rem;
+    }
+  
+    .student-form h2 {
+      font-size: 1.5rem;
+    }
+  
+    .form-group input {
+      padding: 0.7rem;
+    }
+  
+    button[type="submit"] {
+      padding: 0.7rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .student-form {
+      padding: 1rem;
+    }
+  
+    .student-form h2 {
+      font-size: 1.2rem;
+    }
+  
+    .form-group input {
+      padding: 0.6rem;
+      font-size: 0.9rem;
+    }
+  
+    button[type="submit"] {
+      padding: 0.6rem;
+      font-size: 0.9rem;
+    }
+  }

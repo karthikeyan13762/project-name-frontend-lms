@@ -1,0 +1,125 @@
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif; 
+    line-height: 1.5;
+    background-color: #f9fafb; 
+  }
+  
+  
+  .login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh; 
+    background: linear-gradient(to bottom right, rgba(26, 32, 44, 0.8), rgba(26, 32, 44, 0.8)),
+                url("https://via.placeholder.com/1920x1080") no-repeat center/cover; 
+    color: #ffffff;
+  }
+  
+  /* Login Container */
+  .login-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); 
+    text-align: center;
+  }
+  
+  /* Form Heading */
+  .login-container h2 {
+    margin-bottom: 1.5rem;
+    color: #1a202c; 
+    font-size: 1.8rem;
+  }
+  
+  /* Form Group */
+  .form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #4a5568; 
+  }
+  
+  .form-group input,
+  .form-group select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #cbd5e0; 
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .form-group input:focus,
+  .form-group select:focus {
+    outline: none;
+    border-color: #4fd1c5; 
+    box-shadow: 0 0 4px #4fd1c5;
+  }
+  
+  /* Login Button */
+  button {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #4fd1c5; 
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #38b2ac; 
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .login-container {
+      padding: 1.5rem;
+    }
+  
+    .login-container h2 {
+      font-size: 1.5rem;
+    }
+  
+    .form-group input,
+    .form-group select {
+      padding: 0.7rem;
+    }
+  
+    button {
+      padding: 0.7rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .login-container {
+      padding: 1rem;
+    }
+  
+    .login-container h2 {
+      font-size: 1.2rem;
+    }
+  
+    .form-group input,
+    .form-group select {
+      padding: 0.6rem;
+      font-size: 0.9rem;
+    }
+  
+    button {
+      padding: 0.6rem;
+      font-size: 0.9rem;
+    }
+  }
+  

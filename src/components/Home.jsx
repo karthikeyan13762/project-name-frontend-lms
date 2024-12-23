@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../css/Home.css";
+
 function Home() {
   return (
     <div className="hero">
