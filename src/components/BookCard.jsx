@@ -6,7 +6,7 @@ function BookCard({ book, role }) {
   return (
     <div className="book-card">
       <img
-        src={`http://localhost:3001${image}`}
+        src={`https://project-name-backend-lms.onrender.com${image}`}
         alt={name}
         className="book-image"
       />

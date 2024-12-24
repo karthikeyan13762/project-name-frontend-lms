@@ -15,7 +15,7 @@ function EditBook() {
   useEffect(() => {
     if (id) {
       axios
-        .get(`http://localhost:3001/book/book/${id}`)
+        .get(`https://project-name-backend-lms.onrender.com/book/book/${id}`)
         .then((res) => {
           setUserData(res.data);
         })
@@ -34,12 +34,16 @@ function EditBook() {
     formData.append("image", userDta.image);
 
     axios
-      .put("http://localhost:3001/book/book/" + id, formData, {
-        headers: {
-          "Content-Type": "multipart/form-data",
-        },
-        withCredentials: true,
-      })
+      .put(
+        "https://project-name-backend-lms.onrender.com/book/book/" + id,
+        formData,
+        {
+          headers: {
+            "Content-Type": "multipart/form-data",
+          },
+          withCredentials: true,
+        }
+      )
       .then((res) => {
         if (res.data.updated) {
           navigate("/books");

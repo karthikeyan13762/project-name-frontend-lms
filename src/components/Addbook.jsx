@@ -19,12 +19,16 @@ function Addbook() {
     formData.append("image", userDta.image);
 
     axios
-      .post("http://localhost:3001/book/add", formData, {
-        headers: {
-          "Content-Type": "multipart/form-data",
-        },
-        withCredentials: true,
-      })
+      .post(
+        "https://project-name-backend-lms.onrender.com/book/add",
+        formData,
+        {
+          headers: {
+            "Content-Type": "multipart/form-data",
+          },
+          withCredentials: true,
+        }
+      )
       .then((res) => {
         if (res.data.added) {
           navigate("/books");

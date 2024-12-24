@@ -9,7 +9,7 @@ function Dashboard() {
   });
   useEffect(() => {
     axios
-      .get("http://localhost:3001/dashboard")
+      .get("https://project-name-backend-lms.onrender.com/dashboard")
       .then((res) => {
         if (res.data.ok) {
           setData(res.data);

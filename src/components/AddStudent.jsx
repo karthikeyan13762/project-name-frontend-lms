@@ -14,7 +14,10 @@ function AddStudent() {
     e.preventDefault();
 
     axios
-      .post("http://localhost:3001/student/register", userData)
+      .post(
+        "https://project-name-backend-lms.onrender.com/student/register",
+        userData
+      )
       .then((res) => {
         if (res.data.registered) {
           navigate("/dashboard");

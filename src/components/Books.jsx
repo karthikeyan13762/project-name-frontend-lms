@@ -7,7 +7,7 @@ function Books({ role }) {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3001/book/books")
+      .get("https://project-name-backend-lms.onrender.com/book/books")
       .then((res) => {
         setBooks(res.data); // No need to access res.data.books, since the response returns an array
       })
