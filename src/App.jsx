@@ -47,7 +47,6 @@ function App() {
         <Route path="/addbook" element={<Addbook />} />
         <Route path="/book/:id" element={<EditBook />} />
         <Route path="/delete/:id" element={<DeleteBook />} />
-
         <Route />
       </Routes>
     </BrowserRouter>
