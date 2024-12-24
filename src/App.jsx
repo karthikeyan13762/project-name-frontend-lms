@@ -22,7 +22,7 @@ function App() {
   const [role, setRolevar] = useState("");
   const [loading, setLoading] = useState(true); // New state for loading
   axios.defaults.withCredentials = true;
-  axios.defaults.baseURL = "https://project-name-backend-lms.onrender.com"; // Update the backend URL
+  // axios.defaults.baseURL = "https://project-name-backend-lms.onrender.com"; // Update the backend URL
   useEffect(() => {
     axios
       .get("https://project-name-backend-lms.onrender.com/auth/verify")
