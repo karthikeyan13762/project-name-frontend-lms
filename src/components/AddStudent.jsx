@@ -9,6 +9,7 @@ function AddStudent() {
     grade: "",
     password: "",
   });
+
   const navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
