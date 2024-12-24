@@ -26,8 +26,6 @@ function App() {
     axios
       .get("https://project-name-backend-lms.onrender.com/auth/verify")
       .then((res) => {
-        console.log(res);
-
         if (res.data.login) {
           setRolevar(res.data.role);
         } else {
