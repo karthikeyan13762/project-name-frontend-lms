@@ -20,19 +20,27 @@ import DeleteBook from "./components/DeleteBook";
 
 function App() {
   const [role, setRolevar] = useState("");
+  const [loading, setLoading] = useState(true); // New state for loading
   axios.defaults.withCredentials = true;
   useEffect(() => {
     axios
       .get("https://project-name-backend-lms.onrender.com/auth/verify")
       .then((res) => {
+        console.log(res);
+
         if (res.data.login) {
           setRolevar(res.data.role);
         } else {
           setRolevar("");
         }
       })
-      .catch((err) => console.log(err));
-  });
+      .catch((err) => console.log(err))
+      .finally(() => setLoading(false)); // Set loading to false;
+  }, []);
+
+  if (loading) {
+    return <div>Loading...</div>; // Display a loading spinner or message
+  }
   return (
     <BrowserRouter>
       <Nav role={role} />
