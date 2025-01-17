@@ -24,9 +24,12 @@ function Nav({ role }) {
 
       {/* Navigation Links */}
       <div className={`right-navbar ${menuOpen ? "open" : ""}`}>
-        <Link to={"/books"} className="navbar-link">
-          Books
-        </Link>
+        {role === "admin" ||
+          (role === "student" && (
+            <Link to={"/books"} className="navbar-link">
+              Books
+            </Link>
+          ))}
 
         {role === "admin" && (
           <>
