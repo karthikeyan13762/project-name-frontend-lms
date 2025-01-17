@@ -14,10 +14,9 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 2rem;
-    background: linear-gradient(to right, rgba(45, 54, 70, 0.3), rgba(109, 112, 120, 0.3)), 
-                url("lms.jpg") no-repeat center/cover; /* Dummy image */
+    background: url("lms.jpg") no-repeat center/cover;
     color: #ffffff; 
-    height: 88h; 
+    height: 90vh; 
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); 
   
   }
